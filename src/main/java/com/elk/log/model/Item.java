@@ -25,6 +25,9 @@ public class Item {
     @Field(index = false, type = FieldType.Keyword)
     private String images; // 图片地址
 
+    public Item() {
+    }
+
     public Item(Long id, String title, String category, String brand, Double price, String images) {
         this.id = id;
         this.title = title;
@@ -82,6 +85,16 @@ public class Item {
         this.images = images;
     }
 
-
+    @Override
+    public String toString() {
+        return "Item{" +
+                "id=" + id +
+                ", title='" + title + '\'' +
+                ", category='" + category + '\'' +
+                ", brand='" + brand + '\'' +
+                ", price=" + price +
+                ", images='" + images + '\'' +
+                '}';
+    }
 }
 
