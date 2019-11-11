@@ -91,7 +91,7 @@ public class ElasticsearchController {
 
 
     /**
-     * 自定义查询条件---->termQuery(整体匹配)
+     * 自定义查询条件---->termQuery(精确查找)
      */
     @RequestMapping(value = "/termQuery")
     public void termQuery() {
